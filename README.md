@@ -1,5 +1,7 @@
 This project features a carousel image slider with only HTML/CSS/JavaScript.  Please
-refer to this github repository: 
+refer to this github repository: https://github.com/shorebird2016/react-carousel
+
+Demo: https://carousel-react.herokuapp.com/
 
 ### Main Features
 
