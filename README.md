@@ -1,28 +1,22 @@
 This project features a carousel image slider with only HTML/CSS/JavaScript.  Please
 refer to this github repository: 
 
-## Main Features
+### Main Features
 
-- [A re-useable React component](#updating-to-new-releases)
-- [Simple programming interface](#sending-feedback)
-- [User supplied array of images without requiring images with same size](#folder-structure)
-- [Adjustable delay between slides](#supported-language-features-and-polyfills)
+- A re-useable React component
+- Simple programming interface
+- User supplied array of images without requiring images with same size
+- Adjustable delay between slides
 
-- [Available Scripts](#available-scripts)
-  - [npm start](#npm-start)
-  - [npm test](#npm-test)
-
-## Sample Screen Shots
+### Sample Screen Shots
 
 
-## Updating to New Releases
+### Folder Structure
 
-## Folder Structure
-
-After creation, your project should look like this:
+The source tree looks like this:
 
 ```
-my-app/
+carousel/
   README.md
   node_modules/
   package.json
@@ -36,10 +30,22 @@ my-app/
     index.css
     index.js
     logo.svg
+    asset/
+        slider1.png
+        slider2.png
+        slider3.png
+        slider4.png
+    carousel/
+        carousel.js
+        main.sass
 ```
+This app was built from creat-react-app so only folders asset and carousel are
+application specific.  The re-useable code resides under carousel/ folder.
 
-For the project to build, **these files must exist with exact filenames**:
+### Customiation
 
-* `public/index.html` is the page template;
-* `src/index.js` is the JavaScript entry point.
-The above form is looking for a variable called `REACT_APP_SECRET_CODE` from the environment. In order to consume this
+To add more images
+1. place more images under asset folder
+2. update slideImages array in carousel.js to add more images
+
+To change delay - change value for switchInterval prop in ms (default 5000)
