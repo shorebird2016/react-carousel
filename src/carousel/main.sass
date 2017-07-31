@@ -1,0 +1,76 @@
+* 
+  font-family: Verdana
+  margin: 0
+  padding: 0
+
+.header-div
+  text-align: center
+  background-color: lightcyan
+  padding: 10px 0 10px 0
+
+.carousel
+  margin: 0
+  position: relative
+  overflow: hidden
+  min-height: 474px
+  /*NOTE - the two min-height must be equal*/
+
+.slider-box
+  display: flex
+  position: relative
+  width: 400%
+  left: 0
+  align-items: flex-end
+  transition: left 1s ease-in-out 0.1s
+
+  /*MUST have height - respected by .carousel */
+.slide-image
+  width: 25%
+  min-height: 474px
+  height: 100%
+  /*NOTE - the two min-height must be equal*/
+
+#nav-next
+  position: absolute
+  left: 10px
+  top: 50%
+  color: white
+  font-weight: bold
+  cursor: pointer
+  opacity: 0.6
+  font-size: 3em
+  transform: translateY(-50%)
+  &:hover
+    opacity: 1
+
+#nav-prev
+  position: absolute
+  right: 10px
+  top: 50%
+  color: white
+  font-weight: bold
+  cursor: pointer
+  opacity: 0.6
+  font-size: 3em
+  transform: translateY(-50%)
+  &:hover
+    opacity: 1
+
+.circle-box
+  position: absolute
+  bottom: 20px
+  left: 45%
+
+.circle
+  width: 25px
+  height: 25px
+  opacity: 0.7
+  margin: 0 5px 0 5px
+  border-radius: 50px
+  background: white
+
+.deug
+  border: 1px red solid
+
+.deug1
+  border: 1px blue solid
