@@ -77,13 +77,12 @@ export default class Carousel extends React.Component {
    showImage(event) {//use target to find index to images
       // console.log(event.target.dataset.index);
       this.repo.currentIndex = event.target.dataset.index;
-console.log(this.repo.currentIndex);
       let pct = this.repo.currentIndex * (-100) + '%';
       this.setState({left_position: pct});
-      this.hideFocus();
+      // this.hideFocus();
    }
-   //hide button focus after click TODO for circles
-   hideFocus = () => { console.log("Hiding focus.....") };
+   //hide button focus after click
+   // hideFocus = () => { console.log("Hiding focus.....") };
 
    render() {
       //get style delta, apply inline
